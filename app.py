@@ -1,13 +1,14 @@
-from tensorflow.keras.models import load_model
+from tensorflow.keras.applications.resnet50 import ResNet50
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.resnet50 import preprocess_input, decode_predictions
+import tensorflow as tf
+import numpy as np
 from flask import Flask, jsonify, request
 import urllib
 import json
 import PIL
-import numpy as np
 
-model = load_model('Image_Classifier.hd5', compile=False)
+model = ResNet50(weights='imagenet')
 
 app = Flask(__name__)
 
