@@ -59,4 +59,4 @@ def predict():
     return {'value':cat,'responseCode':200}
 
 if __name__ == '__main__':
-    app.run(host='https://eager-ride-7fb63a.netlify.app/')
+    app.run(host='0.0.0.0',port=8080)
