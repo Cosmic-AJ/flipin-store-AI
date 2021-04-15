@@ -7,7 +7,7 @@ import json
 import PIL
 import numpy as np
 
-model = load_model('./Image_Classifier.hd5', compile=False)
+model = load_model('Image_Classifier.hd5', compile=False)
 
 app = Flask(__name__)
 
