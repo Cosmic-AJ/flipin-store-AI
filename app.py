@@ -3,7 +3,7 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.resnet50 import preprocess_input, decode_predictions
 import tensorflow as tf
 import numpy as np
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 import urllib
 import json
 import PIL
@@ -59,4 +59,4 @@ def predict():
     return {'value':cat,'responseCode':200}
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=8080)
+    app.run()
