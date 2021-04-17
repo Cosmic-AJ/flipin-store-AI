@@ -12,7 +12,7 @@ model = ResNet50(weights='imagenet')
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['POST'])
 def predict():
     link = request.get_json(force=True)
     link = link['Link']
