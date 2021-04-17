@@ -64,5 +64,5 @@ def predict():
     #output={'results':link}
     return {'value':cat,'responseCode':200}
 
-#if __name__ == '__main__':
-#    app.run(debug=True)
+if __name__ == '__main__':
+    application.run(debug=True)
