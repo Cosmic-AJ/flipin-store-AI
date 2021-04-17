@@ -7,4 +7,3 @@ if project_home not in sys.path:
 
 # import flask app but need to call it "application" for WSGI to work
 from app import app as application  # noqa
-application.run()
