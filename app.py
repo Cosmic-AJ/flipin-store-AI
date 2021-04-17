@@ -7,6 +7,7 @@ from flask import Flask, jsonify, request, render_template
 import urllib
 import json
 import PIL
+from gevent.pywsgi import WSGIServer
 
 model = ResNet50(weights='imagenet')
 
@@ -58,4 +59,6 @@ def predict():
     return {'value':cat,'responseCode':200}
 
 if __name__ == '__main__':
+    http_server = WSGIServer(('', 5000), app)
+    http_server.serve_forever()
     app.run(debug=True)
