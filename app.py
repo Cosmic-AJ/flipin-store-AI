@@ -12,7 +12,12 @@ model = ResNet50(weights='imagenet')
 
 app = Flask(__name__)
 
-@app.route('/', methods=['POST'])
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+
+@app.route('/classify', methods=['POST'])
 def predict():
     link = request.get_json(force=True)
     link = link['Link']
