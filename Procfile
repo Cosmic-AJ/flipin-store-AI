@@ -1,1 +1,1 @@
-web: gunicor
+web: gunico
