@@ -1,1 +1,1 @@
-web: guni
+web: g
