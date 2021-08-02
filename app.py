@@ -7,7 +7,7 @@ from flask_cors import CORS
 from flask import Flask, jsonify, request, render_template
 import urllib
 import json
-import PILkkk
+import PIL
 
 model = ResNet50(weights='imagenet')
 
