@@ -1,3 +1,3 @@
 import sys
 
-# add your project directory to the sys.pat
+# add your project directory to the sys.
