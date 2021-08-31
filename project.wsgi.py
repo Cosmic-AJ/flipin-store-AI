@@ -1,3 +1,3 @@
 import sys
 
-# add your project direc
+# add your project dir
