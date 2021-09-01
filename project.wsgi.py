@@ -1,3 +1,3 @@
 import sys
 
-# add your projedaf
+# add your proje
