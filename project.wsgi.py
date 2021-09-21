@@ -1,3 +1,3 @@
 import sys
 
-fbgfb bnfgnf fnfn
+fbgfb bnfgnf f
